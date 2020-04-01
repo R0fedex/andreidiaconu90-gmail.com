@@ -8,7 +8,8 @@ const Popup = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        N-ai treaba aici:)
+        {/* <p>
           Edit <code>src/pages/Popup/Popup.js</code> and save to reload.
         </p>
         <a
@@ -18,7 +19,7 @@ const Popup = () => {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
     </div>
   );

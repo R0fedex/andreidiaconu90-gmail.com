@@ -1,6 +1,4 @@
 import { printLine } from './modules/print';
-console.log('Content script works!');
-console.log('Must reload extension for modifications to take effect.');
 printLine("Using the 'printLine' function from the Print Module");
 changeAccrualRule();
 
@@ -10,7 +8,7 @@ function changeAccrualRule() {
     var valuesToSet = ['30', '31', '32', '33', '34', '35', '36', '37', '12'];
     var ddListsToChange = document.querySelectorAll("select[name^=leave_accrual_rule_id]");
     ddListsToChange.forEach(function (item, index) {
-        console.log('Current dropdown: ' + item.value + '.New value to set: ' + valuesToSet[index]);
+        printLine('Current dropdown: ' + item.value + '.New value to set: ' + valuesToSet[index]);
         item.value = valuesToSet[index];
     })
     //change start date and end date
@@ -41,7 +39,7 @@ function changeAccrualRule() {
     var transferDdsList = document.querySelectorAll("select[name^=transfer_balance_to]");
 
     transferDdsList.forEach(function (item, index) {
-        console.log('Current dropdown: ' + item.value + '.New value to set: ' + transferValuesToSet[index]);
+        printLine('Current dropdown: ' + item.value + '.New value to set: ' + transferValuesToSet[index]);
         item.value = transferValuesToSet[index];
     });
 }

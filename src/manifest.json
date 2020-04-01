@@ -1,5 +1,5 @@
 {
-  "name": "Chrome extension to auto fill OpenAir form",
+  "name": "Auto Leave Accrual",
   "options_page": "options.html",
   "background": {
     "page": "background.html"
