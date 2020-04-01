@@ -18,7 +18,7 @@ function changeAccrualRule() {
         let formattedEndDate = '';
         //while it's not the last row, update end date
         if (index !== endDates.length - 1) {
-            //parse the date, add 2 years, and transform it to expected format
+            //parse the start date, add 2 years, transform it to expected format
             var startDateParts = startDates[index].value.split('/');
             var newEndDate = new Date((parseInt(startDateParts[2], 10) + 2).toString(), startDateParts[1] - 1, startDateParts[0]);
             formattedEndDate = "0" + newEndDate.getDate() + "/0" + (newEndDate.getMonth() + 1) + "/" + newEndDate.getFullYear();
